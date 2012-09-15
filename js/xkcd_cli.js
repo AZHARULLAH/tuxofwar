@@ -25,7 +25,7 @@ function getUrlVars() {
 }
 
 var xkcd = {
-	latest: {"num" : 4},
+	latest: {"num" : 45},
 	last: {"num" : 1},
 	cache: {},
 	baseQ: '/contest/question/',
@@ -238,7 +238,7 @@ var Filesystem = {
 	'welcome.txt': {type: 'file', read: function (terminal) {
 		'use strict';
 		$.each([
-			$('<h3>').text('Welcome to Roshan Piyush\'s Tux of War contest console'),
+			$('<h3>').text('Welcome to Tux of War contest console'),
 			'Use "ls", "cat", and "cd" to navigate the filesystem.Press "Ctrl" then "L" to clear.',
 			'cat reginfo.txt for registration information.',
 			'The contest opens at 10pm tonight. You may login upto 10:30 pm to finish the contest in time.',

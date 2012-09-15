@@ -9,7 +9,7 @@ from google.appengine.api import users
 from questiondb import questionm
 def generateSet():
 	a = []
-	for i in range(4):
+	for i in range(45):
 		a.append(i+1)
 	random.shuffle(a)
 	return a
@@ -69,7 +69,7 @@ def boolRemainingTime():
 def userElapsedTime():
 	query = userPlay.all()
 	u = query.filter('user = ', users.get_current_user()).get()
-	return ((datetime.datetime.now() - u.startTime).microseconds/1000)	
+	return ((datetime.datetime.now() - u.startTime).microseconds/1000)
 
 def userPermutation(num):
 	query = userPlay.all()
